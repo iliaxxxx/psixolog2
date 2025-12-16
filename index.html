@@ -531,7 +531,7 @@
         .pricing-grid {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 32px;
             margin-top: 32px;
         }
 
@@ -542,6 +542,11 @@
             box-shadow: var(--shadow);
             position: relative;
             overflow: hidden;
+            margin-bottom: 16px;
+        }
+
+        .pricing-card:last-child {
+            margin-bottom: 0;
         }
 
         .pricing-card.featured {
