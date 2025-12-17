@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <title>Программа восстановления от выгорания | Игорь Старостин</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -651,6 +651,10 @@
             cursor: pointer;
             transition: all 0.2s ease;
             text-decoration: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+            touch-action: manipulation;
+            user-select: none;
+            -webkit-user-select: none;
         }
 
         .btn-primary {
@@ -663,6 +667,11 @@
             transform: translateY(-2px);
         }
 
+        .btn-primary:active {
+            background: var(--text);
+            transform: translateY(0);
+        }
+
         .btn-accent {
             background: var(--accent);
             color: white;
@@ -671,6 +680,11 @@
         .btn-accent:hover {
             background: var(--accent-dark);
             transform: translateY(-2px);
+        }
+
+        .btn-accent:active {
+            background: var(--accent-dark);
+            transform: translateY(0);
         }
 
         .btn svg {
@@ -1397,7 +1411,7 @@
                         </li>
                     </ul>
 
-                    <a href="https://igorstarostin.getcourse.ru/pl/lite/widget/show?id=1533202" class="btn btn-primary" target="_blank">
+                    <a href="https://igorstarostin.getcourse.ru/pl/lite/widget/show?id=1533202" class="btn btn-primary" target="_blank" rel="noopener noreferrer" onclick="return true;">
                         Выбрать базовый
                     </a>
                 </div>
@@ -1447,7 +1461,7 @@
                         </li>
                     </ul>
 
-                    <a href="https://igorstarostin.getcourse.ru/pl/lite/widget/show?id=1533209" class="btn btn-accent" target="_blank">
+                    <a href="https://igorstarostin.getcourse.ru/pl/lite/widget/show?id=1533209" class="btn btn-accent" target="_blank" rel="noopener noreferrer" onclick="return true;">
                         Выбрать с поддержкой
                     </a>
                 </div>
