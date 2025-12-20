@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/test/:path*",
+      "destination": "https://psixolog-livid.vercel.app/:path*"
+    }
+  ]
+}
